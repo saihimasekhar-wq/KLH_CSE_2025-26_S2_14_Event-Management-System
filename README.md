@@ -1,150 +1,253 @@
-# Event Management System — Z-Algorithm Search Engine
+# Smart Event Management System using Advanced Data Structures and Algorithms
 
-**KLH CSE 2025-26 | S2-14 | String Pattern Matching**
+## DSA-3 Project
 
----
+### Team Members
 
-## Project Overview
+|             Name             |    ID Numbers   | Role      |
+|------------------------------|-----------------|-----------|
+| CHERUKUMALLI SAI HIMA SEKHAR |    2520030554   | Developer |
+| RAMGARI RAGHUVEER            |    2520030225   | Developer |
+| PENDRI SAIVARSHITH REDDY     |    2520030598   | Developer |
 
-This project implements an **Event Management System** that:
-- Stores information about Indian festivals in `.txt` files
-- Uses the **Z-Algorithm** for fast, efficient keyword search across all event files
-- Recommends **related events** based on shared characters and connections
+### Supervisor
 
----
+**VINAY KUMAR SRIPERAMBUDURI**
 
-## Z-Algorithm
+### Course
 
-The Z-Algorithm finds all occurrences of a pattern in a text in **O(n + m)** time, where:
-- `n` = length of the text
-- `m` = length of the search pattern
-
-It works by building a **Z-array** where `Z[i]` = length of the longest substring starting at position `i` that is also a prefix of the combined string `pattern$text`.
-
-**Advantages over Brute Force (O(n*m))**:
-- Linear time guarantee
-- Single pass through the text
-- No backtracking
+**Data Structures and Algorithms – DSA-3**
 
 ---
 
-## Project Structure
+# Abstract
 
-```
-KLH_CSE_2025-26_S2_14_Event-Management-System/
-|
-+-- data/                          <- Event text files
-|   +-- pongal.txt
-|   +-- dasara.txt
-|   +-- ramanavami.txt
-|   +-- diwali.txt
-|   +-- ugadi.txt
-|   +-- holi.txt
-|   +-- krishna_jayanti.txt
-|   +-- makar_sankranti.txt
-|
-+-- src/                           <- Java source files
-|   +-- ZAlgorithm.java            <- Core Z-Algorithm (O(n+m) pattern matching)
-|   +-- EventLoader.java           <- Reads .txt files and parses metadata
-|   +-- EventSearchEngine.java     <- Searches all files using Z-Algorithm
-|   +-- RecommendationEngine.java  <- Suggests related events by shared characters
-|   +-- Main.java                  <- Entry point / interactive console
-|
-+-- out/                           <- Compiled .class files (auto-generated)
-+-- run.bat                        <- Windows batch file to compile and run
-+-- README.md
-```
+Colleges and organizations conduct numerous events throughout the year, making efficient event management an important requirement. Traditional manual event management can result in slow searching, registration delays, scheduling conflicts, duplicate records, and inefficient allocation of seats and volunteers.
+
+The Smart Event Management System is designed to simplify event creation, registration, event searching, scheduling, volunteer management, and seat allocation.
+
+The system is implemented using Java and File Handling, with advanced Data Structures and Algorithms forming the core of important operations.
+
+The project incorporates String Matching algorithms such as KMP, Rabin–Karp, and Z Algorithm for efficient event searching. Dynamic Programming is used for scheduling optimization and conflict reduction. Network Flow and Bipartite Matching are used for optimized allocation of resources such as seats and volunteers.
+
+The objective of the project is to demonstrate how Data Structures and Algorithms can be applied to solve real-world event management problems efficiently.
 
 ---
 
-## How to Run
+# Problem Statement
 
-### Method 1: Use the batch script (Windows)
-```
-run.bat
-```
+Managing events manually can lead to:
 
-### Method 2: Manual compile and run
+- Slow event searching
+- Registration delays
+- Duplicate records
+- Scheduling conflicts
+- Difficulty in assigning volunteers
+- Inefficient seat allocation
+- Difficulty handling a large number of events
+
+The system aims to provide an efficient and scalable solution using appropriate Data Structures and Algorithms.
+
+---
+
+# Objectives
+
+The main objectives of the project are:
+
+1. Provide efficient event creation and management.
+2. Allow users to register for events.
+3. Provide fast keyword-based event searching.
+4. Detect and reduce scheduling conflicts.
+5. Optimize event scheduling.
+6. Assign volunteers efficiently.
+7. Allocate seats effectively.
+8. Demonstrate practical applications of advanced DSA concepts.
+9. Maintain event and registration data using file handling.
+10. Provide reports and useful event statistics.
+
+---
+
+# Proposed Functionalities
+
+## 1. User Login
+
+The system provides role-based access for:
+
+- Admin
+- Organizer
+- Attendee
+- Volunteer
+
+## 2. Event Creation & Management
+
+Organizers can:
+
+- Create events
+- Edit events
+- Categorize events
+- Store event information
+- Manage event metadata
+
+## 3. Event Registration
+
+Users can:
+
+- Register for events
+- Receive registration confirmation
+- Join waitlists when required
+- View registration information
+
+## 4. Event Search
+
+Users can search events using:
+
+- Keywords
+- Event names
+- Categories
+- Other event attributes
+
+Advanced string matching algorithms are used to improve search efficiency.
+
+## 5. Schedule Planner
+
+The scheduling module handles:
+
+- Event timings
+- Venue availability
+- Conflict detection
+- Slot assignment
+- Schedule optimization
+
+## 6. Volunteer & Seat Management
+
+The system manages:
+
+- Volunteer roles
+- Volunteer shifts
+- Seat allocation
+- Resource assignment
+
+## 7. Reports & Analytics
+
+The system can generate information related to:
+
+- Attendance
+- Event registrations
+- Resource utilization
+- Event performance
+
+---
+
+# Data Structures and Algorithms
+
+The project focuses on the following algorithms:
+
+### String Matching
+
+- KMP Algorithm
+- Rabin–Karp Algorithm
+- Z Algorithm
+
+These algorithms are used for efficient keyword and pattern searching.
+
+### Dynamic Programming
+
+Dynamic Programming is used for:
+
+- Scheduling optimization
+- Conflict reduction
+- Finding efficient event schedules
+
+### Network Flow
+
+Network Flow techniques are used for:
+
+- Resource allocation
+- Capacity-based assignment
+- Volunteer allocation
+
+### Bipartite Matching
+
+Bipartite Matching is used for:
+
+- Volunteer assignment
+- Seat/resource assignment
+- Matching available resources with requirements
+
+---
+
+# Technology Stack
+
+|       Component      |   Technology  |
+|----------------------|---------------|
+| Programming Language | Java          |
+| Data Storage         | File Handling |
+| IDE                  | VS Code       |
+| Version Control      | Git           |
+| Repository           | GitHub        |
+
+---
+
+# ⚙️ Setup and Installation
+
+This section explains the software requirements, installation steps, project setup, and execution instructions required to run the Smart Event Management System.
+
+---
+
+## 1. Prerequisites
+
+Before running the project, make sure the following software is installed on your computer:
+
+|         Software        |     Requirement     |                 Purpose                |
+|-------------------------|---------------------|----------------------------------------|
+| Java JDK                | Version 17 or above | Compile and run the Java application   |
+| Visual Studio Code      | Latest version      | Development and execution environment  |
+| Git                     | Latest version      | Clone and manage the GitHub repository |
+| Extension Pack for Java | VS Code Extension   | Java development and execution         |
+
+> **Important:** Install the **JDK (Java Development Kit)**, not only the JRE, because the project requires the Java compiler (`javac`).
+
+---
+
+## 2. Install Java JDK
+
+The project requires **Java JDK 17 or above**.
+
+Download and install Java JDK from an official JDK provider.
+
+After installation, open **Command Prompt**, **PowerShell**, or the **VS Code Terminal**.
+
+### Verify Java Installation
+
+Run:
+
 ```bash
-# Step 1: Create output folder
-mkdir out
-
-# Step 2: Compile all Java files
-javac -encoding UTF-8 -d out src\ZAlgorithm.java src\EventLoader.java src\EventSearchEngine.java src\RecommendationEngine.java src\Main.java
-
-# Step 3: Run the program
-java -cp out Main
+java -version
 ```
+# Project Architecture
 
----
+The system is divided into multiple logical components:
 
-## Example Usage
+```text
+                    Smart Event Management System
+                              |
+              +---------------+---------------+
+              |               |               |
+           Users           Events          Resources
+              |               |               |
+        Authentication    Management     Volunteers/Seats
+                              |
+                    +---------+---------+
+                    |                   |
+                Searching           Scheduling
+                    |                   |
+             String Matching      Dynamic Programming
+                    |                   |
+                    +---------+---------+
+                              |
+                     Resource Allocation
+                              |
+                  Network Flow / Matching
 
-```
-Enter event name or keyword to search: ramanavami
 
-=== EVENT FOUND: DASARA (dasara.txt) ===
-    Keyword "ramanavami" found at 3 position(s): [87, 2299, 2331]
-[Full content of dasara.txt printed here]
-
-=== EVENT FOUND: SRI RAMANAVAMI (ramanavami.txt) ===
-    Keyword "ramanavami" found at 4 position(s): [11, 148, 168, 1258]
-[Full content of ramanavami.txt printed here]
-
-*** RECOMMENDED RELATED EVENTS:
-  1. Diwali (diwali.txt)
-     Reason: Shares the character "Rama" with "Sri Ramanavami"
-  2. Holi (holi.txt)
-     Reason: Shares the character "Krishna" with "Diwali"
-```
-
----
-
-## Event Files Format
-
-Each `.txt` file has metadata at the top:
-```
-EVENT: <Event Display Name>
-CHARACTERS: <char1>, <char2>, <char3>
-RELATED: <filename1>, <filename2>
-
-=== ABOUT <EVENT> ===
-[Full event description...]
-```
-
----
-
-## Events Covered
-
-| File | Event | Key Characters |
-|------|-------|---------------|
-| pongal.txt | Pongal | Sun God, Surya, Indra, cattle |
-| dasara.txt | Dasara | Rama, Ravana, Durga, Hanuman |
-| ramanavami.txt | Sri Ramanavami | Rama, Sita, Lakshmana, Hanuman |
-| diwali.txt | Diwali | Rama, Sita, Lakshmi, Krishna |
-| ugadi.txt | Ugadi | Brahma, Vishnu, Shiva |
-| holi.txt | Holi | Holika, Prahlada, Krishna, Radha |
-| krishna_jayanti.txt | Krishna Jayanti | Krishna, Radha, Devaki, Arjuna |
-| makar_sankranti.txt | Makar Sankranti | Sun God, Bhishma, Vishnu |
-
----
-
-## Recommendation Logic
-
-1. **Direct links**: Each event file has a `RELATED:` tag listing directly connected events
-2. **Shared characters**: The engine scans all files for common characters
-   - Example: Searching "Ramanavami" → finds Rama → recommends Dasara and Diwali (both mention Rama)
-
----
-
-## Algorithm Files
-
-| File | Algorithm | Purpose |
-|------|-----------|---------|
-| ZAlgorithm.java | Z-Algorithm | O(n+m) pattern matching |
-| RecommendationEngine.java | Character graph traversal | Event recommendation |
-| EventLoader.java | File I/O + parsing | Load .txt event files |
-
----
-
-*KLH University | CSE Department | 2025-26 | Team 14*
+                  
