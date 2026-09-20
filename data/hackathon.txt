@@ -1,0 +1,16 @@
+SMART CAMPUS HACKATHON 2026
+
+The Smart Campus Hackathon is a programming and innovation event where students develop solutions
+for real-world campus problems.
+
+Event Date: November 2, 2026
+Venue: Innovation Lab
+Time: 9:00 AM onwards
+
+Teams will work on problems related to smart classrooms, campus navigation, event management,
+energy efficiency, and student services.
+
+The hackathon includes problem statement selection, development, mentor reviews, and final project presentations.
+
+Students are encouraged to use software engineering, artificial intelligence, cloud computing,
+and data structures to develop their solutions.
