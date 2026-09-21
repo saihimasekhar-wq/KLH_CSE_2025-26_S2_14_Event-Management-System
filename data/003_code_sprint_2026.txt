@@ -1,0 +1,14 @@
+CODE SPRINT 2026
+
+Code Sprint is a programming competition organized for students interested in software development.
+The event challenges participants to solve programming problems within a fixed time.
+
+Event Date: October 14, 2026
+Venue: CSE Computer Lab
+Time: 10:00 AM onwards
+
+Students can participate individually or in teams and solve problems using supported programming languages.
+The coding committee will manage registrations, problem sets, and laboratory arrangements.
+The event also includes a short debugging challenge.
+
+Code Sprint provides students with an opportunity to improve logical thinking, coding ability, and competitive programming skills.

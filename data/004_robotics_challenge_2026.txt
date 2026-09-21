@@ -1,0 +1,14 @@
+ROBOTICS CHALLENGE 2026
+
+The Robotics Challenge is a hands-on technical event focused on robotics and automation.
+Students work with robots and sensors to complete practical challenges.
+
+Event Date: October 16, 2026
+Venue: Robotics Arena
+Time: 9:00 AM onwards
+
+Participants can compete in line following, obstacle navigation, and robot control activities.
+The robotics committee will manage registrations, equipment, and competition rounds.
+A demonstration zone will allow students to present their robotic projects.
+
+The Robotics Challenge provides students with an opportunity to develop engineering, teamwork, and problem-solving skills.

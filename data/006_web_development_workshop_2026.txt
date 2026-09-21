@@ -1,0 +1,14 @@
+WEB DEVELOPMENT WORKSHOP 2026
+
+The Web Development Workshop is a practical learning event for students interested in web technologies.
+The workshop introduces participants to modern frontend and backend development concepts.
+
+Event Date: October 20, 2026
+Venue: Web Technology Lab
+Time: 11:00 AM onwards
+
+Students can practice HTML, CSS, JavaScript, responsive design, and basic server development.
+The workshop team will manage registrations, lab systems, and instructor sessions.
+Participants will build a small web application during the workshop.
+
+The workshop provides students with an opportunity to strengthen practical development and teamwork skills.

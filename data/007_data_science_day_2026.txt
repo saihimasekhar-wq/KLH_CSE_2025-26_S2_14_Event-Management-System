@@ -1,0 +1,14 @@
+DATA SCIENCE DAY 2026
+
+Data Science Day is an academic event focused on data analysis and machine learning.
+The event brings students together to explore datasets, analytical methods, and practical applications.
+
+Event Date: October 22, 2026
+Venue: Data Analytics Lab
+Time: 10:00 AM onwards
+
+Students can participate in data challenges, visualization contests, and machine learning demonstrations.
+The data science committee will manage registrations, datasets, and lab arrangements.
+A poster exhibition will showcase student analytics projects.
+
+Data Science Day provides students with an opportunity to develop analytical thinking and data-driven problem-solving skills.
